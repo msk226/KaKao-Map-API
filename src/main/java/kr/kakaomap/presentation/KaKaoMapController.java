@@ -19,7 +19,8 @@ public class KaKaoMapController {
     }
 
     @GetMapping("/search")
-    public KaKaoSearchResponse search(@RequestParam String keyword) {
-        return placeSearchService.search(keyword);
+    public KaKaoSearchResponse search(@RequestParam String keyword,
+                                      @RequestParam(name = "category_group_code") String categoryGroupCode) {
+        return placeSearchService.search(keyword, categoryGroupCode);
     }
 }

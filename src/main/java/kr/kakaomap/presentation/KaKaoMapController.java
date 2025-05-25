@@ -13,11 +13,6 @@ public class KaKaoMapController {
 
     private final PlaceSearchService placeSearchService;
 
-    @GetMapping("/api/health-check")
-    public String healthCheck() {
-        return "Kakao Map API is running!";
-    }
-
     @GetMapping("/search")
     public KaKaoSearchResponse search(@RequestParam String keyword,
                                       @RequestParam(name = "category_group_code") String categoryGroupCode) {

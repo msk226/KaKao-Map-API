@@ -34,5 +34,4 @@ public class PlaceSearchService {
                 categoryGroupCode, x, y, 1000, "distance", 1, 10);
     }
 
-
 }
